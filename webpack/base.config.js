@@ -28,8 +28,8 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.(c|le)ss$/,
-        use: ["less-loader", MiniCssExtractPlugin.loader, "css-loader"]
+        test: /\.(css|less)$/,
+        use: ["vue-style-loader", "css-loader", "less-loader"]
       }
     ]
   },
