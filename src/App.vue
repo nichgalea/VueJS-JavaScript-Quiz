@@ -1,30 +1,32 @@
 <template>
   <div id="app">
-    <ul>
-      <li v-for="(q, index) in questions" :key="index">{{q.question}}</li>
-    </ul>
+    <q-header/>
+
+    <main class="main-content">
+      <!-- <quiz/> -->
+    </main>
   </div>
 </template>
 
-<style>
+<style lang="less">
+@import "utils";
+
 * {
   box-sizing: border-box;
 }
 html,
 body {
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 768px) {
-  #app {
-    background: red;
-  }
+#app {
+  .desktop({max-width: 1140px; margin: 0 auto;});
+  .mobile({width: 100%;});
 }
 
-@media only screen and (min-width: 768px) {
-  #app {
-    background: blue;
-  }
+.main-content {
+  margin-top: 80px;
 }
 </style>
 

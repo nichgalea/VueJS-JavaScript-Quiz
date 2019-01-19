@@ -8,7 +8,7 @@ const opn = require("opn");
 const bundle = require("./dist/vue-ssr-server-bundle.json");
 const clientManifest = require("./dist/vue-ssr-client-manifest.json");
 
-const template = fs.readFileSync("./src/server/index.html", "utf-8");
+const template = fs.readFileSync("./src/index.html", "utf-8");
 
 const app = express();
 
