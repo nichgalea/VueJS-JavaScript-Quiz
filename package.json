@@ -1,0 +1,50 @@
+{
+  "name": "fasttrack-test",
+  "version": "1.0.0",
+  "description": "fasttrack-test",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "NODE_ENV=development webpack-dev-server --config webpack/client.config.js",
+    "start": "npm run build && cross-env node server",
+    "build": "rimraf dist && npm run build:client && npm run build:server",
+    "build:client": "webpack --config webpack/client.config.js --progress",
+    "build:server": "webpack --config webpack/server.config.js --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichgalea/fasttrack-test.git"
+  },
+  "author": "Nicholas Galea (nich.galea@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichgalea/fasttrack-test/issues"
+  },
+  "homepage": "https://github.com/nichgalea/fasttrack-test#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "vue": "^2.5.22",
+    "vue-server-renderer": "^2.5.22"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.5",
+    "cross-env": "^5.2.0",
+    "css-loader": "^2.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "less": "^3.9.0",
+    "less-loader": "^4.1.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "opn": "^5.4.0",
+    "rimraf": "^2.6.3",
+    "vue-loader": "^15.5.1",
+    "vue-template-compiler": "^2.5.22",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
+    "webpack-merge": "^4.2.1",
+    "webpack-node-externals": "^1.7.2"
+  }
+}
