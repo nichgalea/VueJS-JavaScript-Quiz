@@ -1,0 +1,51 @@
+[
+  {
+    "question": "Which framework, like Vue, also works with VDOM?",
+    "choices": ["Angular", "Aurelia", "React", "Ember"],
+    "answer": 2
+  },
+  {
+    "question": "Pick from below what the difference is (if any) between \"() => {}\" and \"function () {}\"?",
+    "choices": [
+      "None",
+      "An arrow function cannot have its own scope",
+      "A normal function cannot have its own scope",
+      "Arrow functions are only for callbacks"
+    ],
+    "answer": 1
+  },
+  {
+    "question": "How many primitive types does JavaScript (as of ES2015) have?",
+    "choices": [5, 7, 6],
+    "answer": 2
+  },
+  {
+    "question": "Is JavaScript object-oriented or functional?",
+    "choices": ["Object-oriented", "Functional", "Both", "Neither"],
+    "answer": 2
+  },
+  {
+    "question": "What is a generator function?",
+    "choices": [
+      "A function that returns an object of a specific type.",
+      "A function that returns functions.",
+      "A function that returns an iterator/iterable object."
+    ],
+    "answer": 2
+  },
+  {
+    "question": "What is the result of \"typeof null\"?",
+    "choices": ["Throws an error.", "\"null\"", "\"undefined\"", "\"object\""],
+    "answer": 3
+  },
+  {
+    "question": "What will \"Object.assign(obj1, obj2)\" return?",
+    "choices": [
+      "A new object with properties from both obj1 and obj2.",
+      "A reference to obj1, after mutating it with obj2's properties.",
+      "A reference to obj2, after mutating it with obj1's properties.",
+      "\"undefined\""
+    ],
+    "answer": 1
+  }
+]
