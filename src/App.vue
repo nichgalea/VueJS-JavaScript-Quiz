@@ -1,9 +1,10 @@
 <template>
   <div id="app">
+    <parallax-bg/>
     <q-header/>
 
     <main class="main-content">
-      <!-- <quiz/> -->
+      <quiz/>
     </main>
   </div>
 </template>
@@ -12,6 +13,7 @@
 @import "utils";
 
 * {
+  appearance: none;
   box-sizing: border-box;
 }
 html,
@@ -21,12 +23,13 @@ body {
 }
 
 #app {
+  position: relative;
   .desktop({max-width: 1140px; margin: 0 auto;});
   .mobile({width: 100%;});
 }
 
 .main-content {
-  margin-top: 80px;
+  margin: 80px 16px 0;
 }
 </style>
 

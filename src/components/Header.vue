@@ -14,7 +14,9 @@
   height: 80px;
   display: flex;
   align-items: center;
+  background: white;
 
+  .desktop({margin: 0 16px;});
   .mobile({justify-content: center;});
 }
 </style>
