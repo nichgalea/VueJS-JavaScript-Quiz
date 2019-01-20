@@ -28,6 +28,15 @@ module.exports = {
         exclude: /node_modules/
       },
       {
+        test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|otf|eot|ico)$/,
+        loader: "url-loader",
+        query: {
+          name: "[name].[hash].[ext]",
+          outputPath: "assets/",
+          limit: 10000
+        }
+      },
+      {
         test: /\.(css|less)$/,
         use: ["vue-style-loader", "css-loader", "less-loader"]
       }
