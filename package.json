@@ -4,6 +4,7 @@
   "description": "fasttrack-test",
   "main": "server.js",
   "scripts": {
+    "postinstall": "npm start",
     "start:dev": "NODE_ENV=development webpack-dev-server --config webpack/client.config.js",
     "start": "npm run build && cross-env node server",
     "build": "rimraf dist && npm run build:client && npm run build:server",
