@@ -16,7 +16,7 @@
   },
   {
     "question": "How many primitive types does JavaScript (as of ES2015) have?",
-    "choices": [5, 7, 6],
+    "choices": ["Five", "Seven", "Six"],
     "answer": 2
   },
   {
