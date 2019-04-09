@@ -1,7 +1,7 @@
 {
-  "name": "fasttrack-test",
+  "name": "vuejs-js-quiz",
   "version": "1.0.0",
-  "description": "fasttrack-test",
+  "description": "vuejs-js-quiz",
   "main": "server.js",
   "scripts": {
     "postinstall": "npm start",
@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nichgalea/fasttrack-test.git"
+    "url": "git+https://github.com/nichgalea/vuejs-js-quiz.git"
   },
   "author": "Nicholas Galea (nich.galea@gmail.com)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/nichgalea/fasttrack-test/issues"
+    "url": "https://github.com/nichgalea/VueJS-JavaScript-Quiz/issues"
   },
-  "homepage": "https://github.com/nichgalea/fasttrack-test#readme",
+  "homepage": "https://github.com/nichgalea/VueJS-JavaScript-Quiz#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.16.4",
